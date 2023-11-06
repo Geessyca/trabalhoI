@@ -3,33 +3,30 @@
 </h1>
 
 <h4 align="center">
-  O intuito deste repositório é compartilhar o código criado para a matéria de sistema distribuido.
-  <br><br>
-  <br><br>
+O intuito deste repositório é compartilhar o código criado para a matéria de sistema distribuido.
 </h4>
 
-<h2 align="left"> Sobre o projeto </h2>
-<h4 align="left">
-    O projeto tem como foco a implementação de um sistema para otimizar a captação de energia solar. Ele se baseia na coleta de dados de quatro sensores de radiação solar, e utiliza dois atuadores para ajustar a placa solar em ângulos que variam de -20 a 20 graus, tanto na horizontal quanto na vertical. Isso assegura o posicionamento ideal da placa, direcionando-a para onde a incidência solar é mais significativa.
+---
 
-    O algoritmo foi desenvolvido em Python para o servidor, utilizando tecnologias como RPC, MQTT e API. Além disso, o frontend foi construído com ReactJS, proporcionando uma interface para a visualização dos dados coletados e permitindo configurações personalizadas.
-  <br><br>
-</h4>
+### Sobre o projeto 
 
-<h2 align="left"> Arquitetura </h2>
-<h4 align="left">
-    Para acessar o sistema, o cliente utiliza uma interface interativa (front-end) que se conecta via API ao controlador. O acesso é protegido por um autenticador por e-mail e senha, o qual protege todas as rotas do sistema.
+O projeto tem como foco a implementação de um sistema para otimizar a captação de energia solar. Ele se baseia na coleta de dados de quatro sensores de radiação solar, e utiliza dois atuadores para ajustar a placa solar em ângulos que variam de -20 a 20 graus, tanto na horizontal quanto na vertical. Isso assegura o posicionamento ideal da placa, direcionando-a para onde a incidência solar é mais significativa.
 
-    O nosso controlador é projetado com redundância para garantir a disponibilidade do sistema. Ele se conecta ao nosso Middleware, que realiza comunicação via RPC, também com redundância. Essa comunicação é responsável pelo envio e coleta de dados em nosso banco de dados MySQL.
+O algoritmo foi desenvolvido em Python para o servidor, utilizando tecnologias como RPC, MQTT e API. Além disso, o frontend foi construído com ReactJS, proporcionando uma interface para a visualização dos dados coletados e permitindo configurações personalizadas.
 
-    É importante destacar que nosso banco de dados também é construído com redundância. Além disso, implementamos um algoritmo de sincronização que assegura a consistência entre as réplicas do banco de dados.
 
-    Os dados gerados pelo sistema são fictícios e gerados aleatoriamente, variando de 0 a 50. Para simular erros nos dados, definimos que todos os números acima de 38 são registrados como nulos (None). A transmissão desses dados é realizada via MQTT, também com autenticação. O simulador do atuador recebe os dados relacionados aos sensores que devem ser ajustados e a posição angular. Além disso, implementamos um script no atuador que normaliza as mensagens, realizando esse processo via Middleware.
+### Arquitetura 
 
-    Todos os dados publicados via MQTT são inseridos no nosso banco de dados, sendo posteriormente consumidos pela nossa API e frequentemente visualizados pelo nosso frontend.
+Para acessar o sistema, o cliente utiliza uma interface interativa (front-end) que se conecta via API ao controlador. O acesso é protegido por um autenticador por e-mail e senha, o qual protege todas as rotas do sistema.
 
-  <br><br>
-</h4>
+O nosso controlador é projetado com redundância para garantir a disponibilidade do sistema. Ele se conecta ao nosso Middleware, que realiza comunicação via RPC, também com redundância. Essa comunicação é responsável pelo envio e coleta de dados em nosso banco de dados MySQL.
+
+É importante destacar que nosso banco de dados também é construído com redundância. Além disso, implementamos um algoritmo de sincronização que assegura a consistência entre as réplicas do banco de dados.
+
+Os dados gerados pelo sistema são fictícios e gerados aleatoriamente, variando de 0 a 50. Para simular erros nos dados, definimos que todos os números acima de 38 são registrados como nulos (None). A transmissão desses dados é realizada via MQTT, também com autenticação. O simulador do atuador recebe os dados relacionados aos sensores que devem ser ajustados e a posição angular. Além disso, implementamos um script no atuador que normaliza as mensagens, realizando esse processo via Middleware.
+
+Todos os dados publicados via MQTT são inseridos no nosso banco de dados, sendo posteriormente consumidos pela nossa API e frequentemente visualizados pelo nosso frontend.
+
 
 ---
 
