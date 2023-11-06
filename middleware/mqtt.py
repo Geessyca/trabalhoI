@@ -9,7 +9,7 @@ class MQTT:
         dados_tratados = re.findall(r'\[.*?\]|\d+|None', str(dados))
         if len(dados_tratados) == 1:
             dados_tratados = re.findall(r'\d+|None', dados_tratados[0])
-            dados_tratados = [int(s) if s.isdigit() else 0 if s == 'None' else s for s in dados_tratados]
+            dados_tratados = [int(s) if s.isdigit() else -1 if s == 'None' else s for s in dados_tratados]
         else:
             dados_tratados = [int(s) if s.isdigit() else -1 if s == 'None' else s for s in dados_tratados]
         return dados_tratados
