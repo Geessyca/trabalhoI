@@ -1,4 +1,41 @@
-## Readme - Executando o Projeto
+<h1 align="center">
+  🎓<br>Sistema Distribuido - Melhoria na captação de energia solar
+</h1>
+
+<h4 align="center">
+  O intuito deste repositório é compartilhar o código criado para a matéria de sistema distribuido.
+  <br><br>
+  <br><br>
+</h4>
+
+<h2 align="left"> Sobre o projeto </h2>
+<h4 align="left">
+    O projeto tem como foco a implementação de um sistema para otimizar a captação de energia solar. Ele se baseia na coleta de dados de quatro sensores de radiação solar, e utiliza dois atuadores para ajustar a placa solar em ângulos que variam de -20 a 20 graus, tanto na horizontal quanto na vertical. Isso assegura o posicionamento ideal da placa, direcionando-a para onde a incidência solar é mais significativa.
+
+    O algoritmo foi desenvolvido em Python para o servidor, utilizando tecnologias como RPC, MQTT e API. Além disso, o frontend foi construído com ReactJS, proporcionando uma interface para a visualização dos dados coletados e permitindo configurações personalizadas.
+  <br><br>
+</h4>
+
+<h2 align="left"> Arquitetura </h2>
+<h4 align="left">
+    Para acessar o sistema, o cliente utiliza uma interface interativa (front-end) que se conecta via API ao controlador. O acesso é protegido por um autenticador por e-mail e senha, o qual protege todas as rotas do sistema.
+
+    O nosso controlador é projetado com redundância para garantir a disponibilidade do sistema. Ele se conecta ao nosso Middleware, que realiza comunicação via RPC, também com redundância. Essa comunicação é responsável pelo envio e coleta de dados em nosso banco de dados MySQL.
+
+    É importante destacar que nosso banco de dados também é construído com redundância. Além disso, implementamos um algoritmo de sincronização que assegura a consistência entre as réplicas do banco de dados.
+
+    Os dados gerados pelo sistema são fictícios e gerados aleatoriamente, variando de 0 a 50. Para simular erros nos dados, definimos que todos os números acima de 38 são registrados como nulos (None). A transmissão desses dados é realizada via MQTT, também com autenticação. O simulador do atuador recebe os dados relacionados aos sensores que devem ser ajustados e a posição angular. Além disso, implementamos um script no atuador que normaliza as mensagens, realizando esse processo via Middleware.
+
+    Todos os dados publicados via MQTT são inseridos no nosso banco de dados, sendo posteriormente consumidos pela nossa API e frequentemente visualizados pelo nosso frontend.
+
+  <br><br>
+</h4>
+
+---
+
+A seguir, é possível visualizar as configurações necessárias para executar a aplicação, juntamente com as instruções para executar cada script. Cada cenário está localizado em uma pasta separada, identificada pelo nome correspondente a ele. Dentro de cada pasta, você encontrará um arquivo README que contém informações sobre as responsabilidades de cada script.
+
+## Configurações do Projeto
 
 Este documento fornece as instruções necessárias para configurar e executar o projeto.
 No arquivo bd.env é possível verificar os dados de acesso ao banco de dados e no auth.env as senhas referente as conexões entre servidors (MQTT, RPC).
@@ -136,9 +173,24 @@ Para executar os diferentes componentes do sistema, siga os passos abaixo:
             npm start
             ```
     A aplicação estará disponível na porta 3000 e se conectará via API com a porta 8000.
+---
 
 Certifique-se de ter todas as dependências instaladas e estar utilizando as versões corretas do Python, Node.js (para o npm) e demais bibliotecas necessárias para o correto funcionamento do sistema. Estes comandos inicializam e interconectam os diferentes componentes do sistema para operar de maneira integrada.
 
 Certifique-se de possuir permissões adequadas para execução dos scripts e de estar utilizando os terminais na localização correta, de acordo com as pastas mencionadas.
 
 Lembre-se de verificar possíveis mensagens de erro ou avisos durante a execução dos comandos e corrigir eventuais problemas de configuração ou dependências faltantes.
+
+##  👩🏻‍💻 Autora<br>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/geessyca/">
+        <img src="https://avatars.githubusercontent.com/u/72661229?v=4" width="100px;" alt="Icon GitHub"/><br>
+        <sub>
+          <b>Gessyca Moreira</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
