@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  mysql_server_a:
+    image: mysql:5.7
+    ports:
+      - "3310:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: asdasd
+    command: --bind-address=0.0.0.0 --port=3306
+
+  mysql_server_b:
+    image: mysql:5.7
+    ports:
+      - "3311:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: asdasd
+    command: --bind-address=0.0.0.0 --port=3306
