@@ -17,11 +17,11 @@ Contém os comandos SQL necessários para inicializar os bancos de dados, inclui
 
 ### disponabilidade.py
 
-Um script em Python que verifica a disponibilidade das portas dos bancos de dados. Por padrão, retorna a porta 3310 se ambas estiverem disponíveis. Além disso, este script chama o arquivo `sincronizador.py`, responsável por sincronizar os dados entre os dois bancos. Essas ações de verificação e sincronização ocorrem a cada 30 segundos.
+Um script em Python que verifica a disponibilidade das portas dos bancos de dados. Por padrão, retorna a ultima porta verificada se ambas estiverem disponíveis. 
 
 ### sincronizador.py
 
-Script encarregado de sincronizar os dados entre os dois bancos de dados. Este arquivo é chamado pelo `disponabilidade.py` e executa a sincronização em intervalos regulares.
+Script encarregado de sincronizar os dados entre os dois bancos de dados e executa a sincronização em intervalos regulares.
 
 ### requisicao.py
 

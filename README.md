@@ -128,6 +128,15 @@ Para executar os diferentes componentes do sistema, siga os passos abaixo:
         ```
     Isso iniciará o middleware na porta 18861 e os servidores nas portas 18862 e 18863.
 
+### Sincronizador de banco de dados
+
+1. **Middleware**:
+    - Abra o terminal na pasta "banco".
+    - Execute o comando:
+        ```
+        python3 sincronizador.py
+        ```
+    Isso iniciará o sincronizador em uma thread separada.
 ### Controladores/API
 
 2. **Controladores/API**:
