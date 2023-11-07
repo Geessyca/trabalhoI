@@ -14,10 +14,12 @@ from middleware.validadores import Validadores
 
 logging.basicConfig(filename='../logs/log.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-PORT = VerificadorConexaoDB().main()
-
 class Middleware(rpyc.Service):
-    
+    def __init__(self):
+        dotenv_path = os.path.join(os.path.dirname(__file__), '../bd.env') 
+        load_dotenv(dotenv_path)
+        PORT = os.getenv("PORT")  
+        self.port =  VerificadorConexaoDB(PORT).main()
     def exposed_save_sensor(self, data):
         try:
             dotenv_path = os.path.join(os.path.dirname(__file__), '../bd.env') 
@@ -43,14 +45,14 @@ class Middleware(rpyc.Service):
     
     def exposed_login(self, email, senha):
         try:
-            return BancoDeDados(email,senha, PORT).login()
+            return BancoDeDados(email,senha, self.port).login()
         except Exception as e:
             logging.error(f"[login] {str(e)}")
             return {"erro": str(e)} 
 
     def exposed_get_conf(self, email, senha):
         try:
-            return BancoDeDados(email,senha, PORT).conf('GET')
+            return BancoDeDados(email,senha, self.port).conf('GET')
         except Exception as e:
             logging.error(f"[get_conf] {str(e)}")
             return {"erro": str(e)} 
@@ -66,14 +68,14 @@ class Middleware(rpyc.Service):
             sensorOeste = mapeamento_booleano[data['sensorOeste']]
             atuaHoriz = mapeamento_booleano[data['atuaHoriz']]
             atuaVert = mapeamento_booleano[data['atuaVert']]
-            return BancoDeDados(email,senha, PORT).conf('POST', [valorMin, sensorNorte, sensorSul, sensorLeste, sensorOeste, atuaHoriz, atuaVert])
+            return BancoDeDados(email,senha, self.port).conf('POST', [valorMin, sensorNorte, sensorSul, sensorLeste, sensorOeste, atuaHoriz, atuaVert])
         except Exception as e:
             logging.error(f"[post_conf] {str(e)}")
             return {"erro": str(e)}
 
     def exposed_get_atua(self, email, senha):
         try:
-            return BancoDeDados(email,senha, PORT).atua('GET')
+            return BancoDeDados(email,senha, self.port).atua('GET')
         except Exception as e:
             logging.error(f"[get_atua] {str(e)}")
             return {"erro": str(e)} 
@@ -85,14 +87,14 @@ class Middleware(rpyc.Service):
             angulo = data['angulo']
             sensor1 = mapeamento_booleano[data['sensor1']]
             sensor2 = mapeamento_booleano[data['sensor2']]
-            return BancoDeDados(email,senha, PORT).atua('POST', [sensor1, sensor2, angulo])  
+            return BancoDeDados(email,senha, self.port).atua('POST', [sensor1, sensor2, angulo])  
         except Exception as e:
             logging.error(f"[post_atua] {str(e)}")
             return {"erro": str(e)} 
    
     def exposed_get_sens(self, email, senha):
         try:
-            return BancoDeDados(email,senha, PORT).sens('GET')
+            return BancoDeDados(email,senha, self.port).sens('GET')
         except Exception as e:
             logging.error(f"[get_sens] {str(e)}")
             return {"erro": str(e)} 
@@ -104,7 +106,7 @@ class Middleware(rpyc.Service):
             sul = data['Sul']
             leste = data['Leste']
             oeste = data['Oeste']
-            return BancoDeDados(email,senha, PORT).sens('POST', [norte, sul, leste, oeste])   
+            return BancoDeDados(email,senha, self.port).sens('POST', [norte, sul, leste, oeste])   
         except Exception as e:
             logging.error(f"[post_sens] {str(e)}")
             return {"erro": str(e)} 

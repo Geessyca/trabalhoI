@@ -48,7 +48,7 @@ export default function Atuadores() {
     const interval = setInterval(() => {
       setCarregamento(true)
       fetchData();
-    }, 70000); 
+    }, 60000); 
     return () => clearInterval(interval);
   }, []);
 

@@ -1,24 +1,48 @@
+import os
 import sys
+import threading
 import time
 import mysql.connector
 import datetime
 import logging
 from dotenv import load_dotenv
-import os
-
-sys.path.append(r'..')
-logging.basicConfig(filename='../logs/log.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='D:/sd/trabalhoI/logs/log.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class TableSync:
     def __init__(self):
-        dotenv_path = os.path.join(os.path.dirname(__file__), '../bd.env')
+        dotenv_path = os.path.join(os.path.dirname(__file__), '../bd.env') 
         load_dotenv(dotenv_path)
         self.host = os.getenv("HOST")
         self.user = os.getenv("USER")
         self.password = os.getenv("PASSWORD")
         self.database = os.getenv("DATABASE")
-        self.port1 = os.getenv("PORT1")
-        self.port2 = os.getenv("PORT2")
+        self.port1=os.getenv("PORT1")
+        self.port2=os.getenv("PORT2")
+
+    def verificar_conexao(self, porta):
+        try:
+            cnx = mysql.connector.connect(
+                host=self.host,
+                port=porta,
+                user=self.user,
+                password=self.password,
+                database=self.database
+            )
+            cnx.close()
+            return True
+        except mysql.connector.Error as err:
+            logging.error(f"Erro de conexão: {err}")
+            return False
+
+    def sincronizacao(self):
+        port1 = self.verificar_conexao(self.port1)
+        port2 = self.verificar_conexao(self.port2)
+
+        if port1 and port2:
+            self.sync_tables('sensores')
+            self.sync_tables('atuadores')
+            self.sync_tables('configuracoes')
+            self.sync_tables('autenticacao')
 
     def connect_to_database(self, host, user, password, database, port):
         try:
@@ -71,16 +95,15 @@ class TableSync:
                     db2.commit()
                 
                 logging.info("Sync process complete for all tables.")
-
-        if db1:
-            db1.close()
-        if db2:
-            db2.close()
+                cursor1.close()
+                cursor2.close()
+                db1.close()
+                db2.close()
 
     def sync(self):
         while True:
-            self.sync_tables('sensores')
-            self.sync_tables('atuadores')
-            self.sync_tables('configuracoes')
-            self.sync_tables('autenticacao')
+            self.sincronizacao()
             time.sleep(30)
+
+thread_sincron = threading.Thread(target=TableSync().sync)
+thread_sincron.start()

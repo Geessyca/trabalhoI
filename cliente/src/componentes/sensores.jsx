@@ -35,7 +35,7 @@ export default function Sensores() {
     const interval = setInterval(() => {
       setCarregamento(true)
       fetchData();
-    }, 60000); 
+    }, 60050); 
     return () => clearInterval(interval);
   }, []);
 
