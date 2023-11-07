@@ -40,7 +40,7 @@ class MQTT:
             angulo=0
             valor_atual=-1
             for i, valor in enumerate(dados_tratados):
-                if valor> conf["valorMin"] > valor_atual:
+                if valor> conf["valorMin"] and valor > valor_atual:
                     valor_atual=valor
                     if (i == 0 and conf["sensorNorte"] == 1 and conf["atuaVert"] == 1):
                         angulo = 20
