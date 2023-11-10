@@ -38,7 +38,7 @@ class MQTT:
             sensor1= 0
             sensor2=0
             angulo=0
-            valor_atual=-1
+            valor_atual=0
             for i, valor in enumerate(dados_tratados):
                 if valor> conf["valorMin"] and valor > valor_atual:
                     valor_atual=valor

@@ -4321,3 +4321,381 @@ INFO:CONNECTION/18861:goodbye ('127.0.0.1', 62920)
 2023-11-07 18:40:12,168 - INFO - accepted ('127.0.0.1', 56651) with fd 304
 2023-11-07 18:40:12,168 - INFO - ('127.0.0.1', 56651) authenticated successfully
 2023-11-07 18:40:12,168 - INFO - welcome ('127.0.0.1', 56651)
+2023-11-07 18:40:15,806 - INFO - [SENSORES] Valores publicados no tópico sensores: [5, 25, 36, 16]
+2023-11-07 18:40:15,813 - INFO - accepted ('127.0.0.1', 56655) with fd 904
+2023-11-07 18:40:15,815 - INFO - ('127.0.0.1', 56655) authenticated successfully
+2023-11-07 18:40:15,816 - INFO - welcome ('127.0.0.1', 56655)
+2023-11-07 18:40:17,065 - INFO: [Sensores] = [5, 25, 36, 16]
+2023-11-07 18:40:17,069 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:40:17,072 - INFO - accepted ('127.0.0.1', 56671) with fd 1220
+2023-11-07 18:40:17,076 - INFO - ('127.0.0.1', 56671) authenticated successfully
+2023-11-07 18:40:17,076 - INFO - welcome ('127.0.0.1', 56671)
+2023-11-07 18:40:17,114 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": -20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:40:17,116 - INFO: [Atuadores] = {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:40:17,516 - INFO - Sync process complete for all tables.
+2023-11-07 18:40:18,116 - INFO - Sync process complete for all tables.
+2023-11-07 18:40:36,362 - WARNING - keyboard interrupt!
+2023-11-07 18:40:36,362 - INFO - server has terminated
+2023-11-07 18:40:36,362 - INFO - listener closed
+2023-11-07 18:40:36,362 - INFO - goodbye ('127.0.0.1', 56671)
+2023-11-07 18:40:36,362 - INFO - goodbye ('127.0.0.1', 56655)
+2023-11-07 18:40:36,362 - INFO - goodbye ('127.0.0.1', 56645)
+2023-11-07 18:40:36,362 - INFO - goodbye ('127.0.0.1', 56651)
+2023-11-07 18:41:01,072 - INFO - server started on [127.0.0.1]:18862
+2023-11-07 18:41:11,396 - INFO - accepted ('127.0.0.1', 56763) with fd 1012
+2023-11-07 18:41:11,400 - INFO - ('127.0.0.1', 56763) authenticated successfully
+2023-11-07 18:41:11,400 - INFO - welcome ('127.0.0.1', 56763)
+2023-11-07 18:41:12,221 - INFO - accepted ('127.0.0.1', 56770) with fd 408
+2023-11-07 18:41:12,223 - INFO - ('127.0.0.1', 56770) authenticated successfully
+2023-11-07 18:41:12,223 - INFO - welcome ('127.0.0.1', 56770)
+2023-11-07 18:41:15,807 - INFO - [SENSORES] Valores publicados no tópico sensores: [22, 11, None, 4]
+2023-11-07 18:41:15,812 - INFO - accepted ('127.0.0.1', 56775) with fd 1008
+2023-11-07 18:41:15,815 - INFO - ('127.0.0.1', 56775) authenticated successfully
+2023-11-07 18:41:15,815 - INFO - welcome ('127.0.0.1', 56775)
+2023-11-07 18:41:15,861 - INFO - goodbye ('127.0.0.1', 56763)
+2023-11-07 18:41:15,861 - INFO - goodbye ('127.0.0.1', 56770)
+2023-11-07 18:41:21,536 - INFO: [Sensores] = [22, 11, None, 4]
+2023-11-07 18:41:21,536 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:41:21,536 - INFO - accepted ('127.0.0.1', 56788) with fd 948
+2023-11-07 18:41:21,548 - INFO - ('127.0.0.1', 56788) authenticated successfully
+2023-11-07 18:41:21,548 - INFO - welcome ('127.0.0.1', 56788)
+2023-11-07 18:41:21,590 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": 20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:41:21,595 - INFO: [Atuadores] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:41:21,950 - INFO - Sync process complete for all tables.
+2023-11-07 18:41:22,376 - INFO - Sync process complete for all tables.
+2023-11-07 18:41:26,380 - INFO - server started on [127.0.0.1]:18863
+2023-11-07 18:41:41,858 - WARNING - keyboard interrupt!
+2023-11-07 18:41:41,858 - INFO - server has terminated
+2023-11-07 18:41:41,858 - INFO - listener closed
+2023-11-07 18:41:41,858 - INFO - goodbye ('127.0.0.1', 56610)
+2023-11-07 18:41:41,858 - INFO - goodbye ('127.0.0.1', 56150)
+2023-11-07 18:41:41,858 - INFO - goodbye ('127.0.0.1', 54280)
+2023-11-07 18:41:41,858 - INFO - goodbye ('127.0.0.1', 56788)
+2023-11-07 18:41:41,858 - INFO - goodbye ('127.0.0.1', 56775)
+2023-11-07 18:41:47,753 - INFO - server started on [127.0.0.1]:18861
+2023-11-07 18:42:15,810 - INFO - [SENSORES] Valores publicados no tópico sensores: [37, None, 21, None]
+2023-11-07 18:42:30,892 - INFO - accepted ('127.0.0.1', 56913) with fd 588
+2023-11-07 18:42:30,892 - INFO - ('127.0.0.1', 56913) authenticated successfully
+2023-11-07 18:42:30,892 - INFO - welcome ('127.0.0.1', 56913)
+2023-11-07 18:42:32,145 - INFO - accepted ('127.0.0.1', 56914) with fd 396
+2023-11-07 18:42:32,145 - INFO - ('127.0.0.1', 56914) authenticated successfully
+2023-11-07 18:42:32,145 - INFO - welcome ('127.0.0.1', 56914)
+2023-11-07 18:42:34,663 - INFO - accepted ('127.0.0.1', 56925) with fd 716
+2023-11-07 18:42:34,663 - INFO - ('127.0.0.1', 56925) authenticated successfully
+2023-11-07 18:42:34,663 - INFO - welcome ('127.0.0.1', 56925)
+2023-11-07 18:42:35,349 - INFO - accepted ('127.0.0.1', 56926) with fd 572
+2023-11-07 18:42:35,349 - INFO - ('127.0.0.1', 56926) authenticated successfully
+2023-11-07 18:42:35,349 - INFO - welcome ('127.0.0.1', 56926)
+2023-11-07 18:42:51,470 - INFO - accepted ('127.0.0.1', 56927) with fd 796
+2023-11-07 18:42:51,472 - INFO - ('127.0.0.1', 56927) authenticated successfully
+2023-11-07 18:42:51,472 - INFO - welcome ('127.0.0.1', 56927)
+2023-11-07 18:43:11,367 - INFO - accepted ('127.0.0.1', 56961) with fd 584
+2023-11-07 18:43:11,369 - INFO - ('127.0.0.1', 56961) authenticated successfully
+2023-11-07 18:43:11,369 - INFO - welcome ('127.0.0.1', 56961)
+2023-11-07 18:43:12,314 - INFO - accepted ('127.0.0.1', 56967) with fd 1104
+2023-11-07 18:43:12,318 - INFO - ('127.0.0.1', 56967) authenticated successfully
+2023-11-07 18:43:12,318 - INFO - welcome ('127.0.0.1', 56967)
+2023-11-07 18:43:12,368 - INFO - goodbye ('127.0.0.1', 56961)
+2023-11-07 18:43:15,812 - INFO - [SENSORES] Valores publicados no tópico sensores: [None, 33, 35, 21]
+2023-11-07 18:43:15,812 - INFO - accepted ('127.0.0.1', 56971) with fd 1080
+2023-11-07 18:43:15,812 - INFO - ('127.0.0.1', 56971) authenticated successfully
+2023-11-07 18:43:15,818 - INFO - welcome ('127.0.0.1', 56971)
+2023-11-07 18:43:16,313 - INFO: [Sensores] = [None, 33, 35, 21]
+2023-11-07 18:43:16,318 - INFO: [Controlador] = {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:43:16,318 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:43:23,972 - INFO - Sync process complete for all tables.
+2023-11-07 18:43:24,171 - INFO - Sync process complete for all tables.
+2023-11-07 18:43:24,900 - INFO - accepted ('127.0.0.1', 56989) with fd 880
+2023-11-07 18:43:24,902 - INFO - ('127.0.0.1', 56989) authenticated successfully
+2023-11-07 18:43:24,902 - INFO - welcome ('127.0.0.1', 56989)
+2023-11-07 18:43:25,124 - INFO - [Atuador] - Conectado ao broker MQTT com resultado de código: 0
+2023-11-07 18:43:30,761 - INFO - [SENSORES] Valores publicados no tópico sensores: [33, 10, 23, 8]
+2023-11-07 18:43:30,949 - INFO - accepted ('127.0.0.1', 57002) with fd 940
+2023-11-07 18:43:30,949 - INFO - ('127.0.0.1', 57002) authenticated successfully
+2023-11-07 18:43:30,949 - INFO - welcome ('127.0.0.1', 57002)
+2023-11-07 18:43:31,359 - INFO: [Sensores] = [33, 10, 23, 8]
+2023-11-07 18:43:31,363 - INFO: [Controlador] = {"angulo": 20, "sensor1": true, "sensor2": false}
+, "sensor1": true, "sensor2": false}
+2023-11-07 18:43:31,367 - INFO - accepted ('127.0.0.1', 57010) with fd 584
+2023-11-07 18:43:31,369 - INFO - ('127.0.0.1', 57010) authenticated successfully
+2023-11-07 18:43:31,370 - INFO - welcome ('127.0.0.1', 57010)
+2023-11-07 18:43:31,411 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": 20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:43:31,415 - INFO: [Atuadores] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:43:33,617 - INFO - Sync process complete for all tables.
+2023-11-07 18:43:33,788 - INFO - Sync process complete for all tables.
+2023-11-07 18:44:11,375 - INFO - accepted ('127.0.0.1', 57071) with fd 1196
+2023-11-07 18:44:11,378 - INFO - ('127.0.0.1', 57071) authenticated successfully
+2023-11-07 18:44:11,378 - INFO - welcome ('127.0.0.1', 57071)
+2023-11-07 18:44:12,368 - INFO - accepted ('127.0.0.1', 57077) with fd 1216
+2023-11-07 18:44:12,370 - INFO - ('127.0.0.1', 57077) authenticated successfully
+2023-11-07 18:44:12,370 - INFO - welcome ('127.0.0.1', 57077)
+2023-11-07 18:44:30,771 - INFO - [SENSORES] Valores publicados no tópico sensores: [19, 0, 22, None]
+2023-11-07 18:44:30,771 - INFO - accepted ('127.0.0.1', 57116) with fd 1248
+2023-11-07 18:44:30,771 - INFO - ('127.0.0.1', 57116) authenticated successfully
+2023-11-07 18:44:30,771 - INFO - welcome ('127.0.0.1', 57116)
+2023-11-07 18:44:30,808 - INFO - goodbye ('127.0.0.1', 56971)
+2023-11-07 18:44:30,809 - INFO - goodbye ('127.0.0.1', 57002)
+2023-11-07 18:44:30,809 - INFO - goodbye ('127.0.0.1', 57010)
+2023-11-07 18:44:30,810 - INFO - goodbye ('127.0.0.1', 57077)
+2023-11-07 18:44:30,810 - INFO - goodbye ('127.0.0.1', 57071)
+2023-11-07 18:44:32,248 - INFO: [Sensores] = [19, 0, 22, None]
+2023-11-07 18:44:32,251 - INFO: [Controlador] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:44:32,251 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:44:32,254 - INFO - accepted ('127.0.0.1', 57124) with fd 1204
+2023-11-07 18:44:32,255 - INFO - ('127.0.0.1', 57124) authenticated successfully
+2023-11-07 18:44:32,255 - INFO - welcome ('127.0.0.1', 57124)
+2023-11-07 18:44:32,287 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": 20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:44:32,290 - INFO: [Atuadores] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:44:34,715 - INFO - Sync process complete for all tables.
+2023-11-07 18:44:34,926 - INFO - Sync process complete for all tables.
+2023-11-07 18:45:11,791 - INFO - accepted ('127.0.0.1', 57172) with fd 408
+2023-11-07 18:45:11,791 - INFO - ('127.0.0.1', 57172) authenticated successfully
+2023-11-07 18:45:11,791 - INFO - welcome ('127.0.0.1', 57172)
+2023-11-07 18:45:13,294 - INFO - accepted ('127.0.0.1', 57178) with fd 1196
+2023-11-07 18:45:13,294 - INFO - ('127.0.0.1', 57178) authenticated successfully
+2023-11-07 18:45:13,294 - INFO - welcome ('127.0.0.1', 57178)
+2023-11-07 18:45:28,048 - INFO - accepted ('127.0.0.1', 57225) with fd 992
+2023-11-07 18:45:28,051 - INFO - ('127.0.0.1', 57225) authenticated successfully
+2023-11-07 18:45:28,051 - INFO - welcome ('127.0.0.1', 57225)
+2023-11-07 18:45:28,206 - INFO - accepted ('127.0.0.1', 57230) with fd 1132
+2023-11-07 18:45:28,211 - INFO - ('127.0.0.1', 57230) authenticated successfully
+2023-11-07 18:45:28,211 - INFO - welcome ('127.0.0.1', 57230)
+2023-11-07 18:45:28,342 - INFO - accepted ('127.0.0.1', 57235) with fd 1144
+2023-11-07 18:45:28,346 - INFO - ('127.0.0.1', 57235) authenticated successfully
+2023-11-07 18:45:28,346 - INFO - welcome ('127.0.0.1', 57235)
+2023-11-07 18:45:28,498 - INFO - accepted ('127.0.0.1', 57242) with fd 1240
+2023-11-07 18:45:28,505 - INFO - ('127.0.0.1', 57242) authenticated successfully
+2023-11-07 18:45:28,505 - INFO - welcome ('127.0.0.1', 57242)
+2023-11-07 18:45:28,640 - INFO - accepted ('127.0.0.1', 57247) with fd 1276
+2023-11-07 18:45:28,641 - INFO - ('127.0.0.1', 57247) authenticated successfully
+2023-11-07 18:45:28,641 - INFO - welcome ('127.0.0.1', 57247)
+2023-11-07 18:45:28,682 - INFO - goodbye ('127.0.0.1', 57124)
+2023-11-07 18:45:28,696 - INFO - goodbye ('127.0.0.1', 57172)
+2023-11-07 18:45:28,696 - INFO - goodbye ('127.0.0.1', 57178)
+2023-11-07 18:45:28,697 - INFO - goodbye ('127.0.0.1', 57225)
+2023-11-07 18:45:28,697 - INFO - goodbye ('127.0.0.1', 57235)
+2023-11-07 18:45:28,697 - INFO - goodbye ('127.0.0.1', 57230)
+2023-11-07 18:45:28,698 - INFO - goodbye ('127.0.0.1', 57242)
+2023-11-07 18:45:28,766 - INFO - accepted ('127.0.0.1', 57252) with fd 1232
+2023-11-07 18:45:28,768 - INFO - ('127.0.0.1', 57252) authenticated successfully
+2023-11-07 18:45:28,768 - INFO - welcome ('127.0.0.1', 57252)
+2023-11-07 18:45:30,772 - INFO - [SENSORES] Valores publicados no tópico sensores: [15, 11, 5, 20]
+2023-11-07 18:45:30,772 - INFO - accepted ('127.0.0.1', 57266) with fd 920
+2023-11-07 18:45:30,772 - INFO - ('127.0.0.1', 57266) authenticated successfully
+2023-11-07 18:45:30,772 - INFO - welcome ('127.0.0.1', 57266)
+2023-11-07 18:45:31,466 - INFO: [Sensores] = [15, 11, 5, 20]
+2023-11-07 18:45:31,469 - INFO: [Controlador] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:45:31,469 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:45:31,474 - INFO - accepted ('127.0.0.1', 57274) with fd 1156
+2023-11-07 18:45:31,476 - INFO - ('127.0.0.1', 57274) authenticated successfully
+2023-11-07 18:45:31,476 - INFO - welcome ('127.0.0.1', 57274)
+2023-11-07 18:45:31,519 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": 20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:45:31,523 - INFO: [Atuadores] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:45:35,916 - INFO - Sync process complete for all tables.
+2023-11-07 18:45:36,294 - INFO - Sync process complete for all tables.
+2023-11-07 18:46:14,265 - INFO - goodbye ('127.0.0.1', 56926)
+2023-11-07 18:46:14,543 - INFO - goodbye ('127.0.0.1', 56914)
+2023-11-07 18:46:14,661 - WARNING - keyboard interrupt!
+2023-11-07 18:46:14,661 - INFO - server has terminated
+2023-11-07 18:46:14,661 - INFO - listener closed
+2023-11-07 18:46:14,662 - INFO - goodbye ('127.0.0.1', 57252)
+2023-11-07 18:46:14,662 - INFO - goodbye ('127.0.0.1', 57274)
+2023-11-07 18:46:14,662 - INFO - goodbye ('127.0.0.1', 57116)
+2023-11-07 18:46:14,663 - INFO - goodbye ('127.0.0.1', 56967)
+2023-11-07 18:46:14,663 - INFO - goodbye ('127.0.0.1', 57247)
+2023-11-07 18:46:14,663 - INFO - goodbye ('127.0.0.1', 57266)
+2023-11-07 18:46:19,015 - INFO - accepted ('127.0.0.1', 57321) with fd 684
+2023-11-07 18:46:19,017 - INFO - ('127.0.0.1', 57321) authenticated successfully
+2023-11-07 18:46:19,018 - INFO - welcome ('127.0.0.1', 57321)
+2023-11-07 18:46:19,061 - INFO - accepted ('127.0.0.1', 57322) with fd 772
+2023-11-07 18:46:19,063 - INFO - ('127.0.0.1', 57322) authenticated successfully
+2023-11-07 18:46:19,063 - INFO - welcome ('127.0.0.1', 57322)
+2023-11-07 18:46:30,185 - INFO - accepted ('127.0.0.1', 57340) with fd 1068
+2023-11-07 18:46:30,189 - INFO - ('127.0.0.1', 57340) authenticated successfully
+2023-11-07 18:46:30,189 - INFO - welcome ('127.0.0.1', 57340)
+2023-11-07 18:46:30,773 - INFO - [SENSORES] Valores publicados no tópico sensores: [4, 27, None, 9]
+2023-11-07 18:46:32,390 - INFO - accepted ('127.0.0.1', 57365) with fd 1184
+2023-11-07 18:46:32,390 - INFO - ('127.0.0.1', 57365) authenticated successfully
+2023-11-07 18:46:32,390 - INFO - welcome ('127.0.0.1', 57365)
+2023-11-07 18:46:32,839 - INFO - accepted ('127.0.0.1', 57371) with fd 1212
+2023-11-07 18:46:32,839 - INFO - ('127.0.0.1', 57371) authenticated successfully
+2023-11-07 18:46:32,839 - INFO - welcome ('127.0.0.1', 57371)
+2023-11-07 18:46:33,615 - INFO: [Sensores] = [4, 27, None, 9]
+2023-11-07 18:46:33,615 - INFO: [Controlador] = {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:46:33,615 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:46:35,669 - INFO - accepted ('127.0.0.1', 57381) with fd 1252
+2023-11-07 18:46:35,669 - INFO - ('127.0.0.1', 57381) authenticated successfully
+2023-11-07 18:46:35,669 - INFO - welcome ('127.0.0.1', 57381)
+2023-11-07 18:46:35,727 - INFO - goodbye ('127.0.0.1', 57340)
+2023-11-07 18:46:35,727 - INFO - goodbye ('127.0.0.1', 57365)
+2023-11-07 18:46:35,728 - INFO - goodbye ('127.0.0.1', 57371)
+2023-11-07 18:46:35,731 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": -20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:46:35,734 - INFO: [Atuadores] = {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:46:57,345 - INFO - Sync process complete for all tables.
+2023-11-07 18:46:57,967 - INFO - Sync process complete for all tables.
+2023-11-07 18:46:58,026 - INFO - server started on [127.0.0.1]:18862
+2023-11-07 18:47:05,141 - INFO - server started on [127.0.0.1]:18863
+2023-11-07 18:47:27,952 - INFO - accepted ('127.0.0.1', 57420) with fd 692
+2023-11-07 18:47:27,952 - INFO - ('127.0.0.1', 57420) authenticated successfully
+2023-11-07 18:47:27,952 - INFO - welcome ('127.0.0.1', 57420)
+2023-11-07 18:47:28,090 - INFO - accepted ('127.0.0.1', 57426) with fd 984
+2023-11-07 18:47:28,094 - INFO - ('127.0.0.1', 57426) authenticated successfully
+2023-11-07 18:47:28,094 - INFO - welcome ('127.0.0.1', 57426)
+2023-11-07 18:47:30,775 - INFO - [SENSORES] Valores publicados no tópico sensores: [26, None, 6, 13]
+2023-11-07 18:47:30,775 - INFO - accepted ('127.0.0.1', 57450) with fd 960
+2023-11-07 18:47:30,775 - INFO - ('127.0.0.1', 57450) authenticated successfully
+2023-11-07 18:47:30,775 - INFO - welcome ('127.0.0.1', 57450)
+2023-11-07 18:47:31,591 - INFO: [Sensores] = [26, None, 6, 13]
+2023-11-07 18:47:31,594 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:47:31,598 - INFO - accepted ('127.0.0.1', 57458) with fd 1084
+2023-11-07 18:47:31,600 - INFO - ('127.0.0.1', 57458) authenticated successfully
+2023-11-07 18:47:31,600 - INFO - welcome ('127.0.0.1', 57458)
+2023-11-07 18:47:31,638 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": 20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:47:31,642 - INFO: [Atuadores] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:47:35,996 - INFO - Sync process complete for all tables.
+2023-11-07 18:47:36,213 - INFO - Sync process complete for all tables.
+2023-11-07 18:47:43,902 - INFO - goodbye ('127.0.0.1', 57321)
+2023-11-07 18:47:44,214 - INFO - goodbye ('127.0.0.1', 57322)
+2023-11-07 18:47:45,506 - INFO - accepted ('127.0.0.1', 57472) with fd 940
+2023-11-07 18:47:45,509 - INFO - ('127.0.0.1', 57472) authenticated successfully
+2023-11-07 18:47:45,510 - INFO - welcome ('127.0.0.1', 57472)
+2023-11-07 18:47:45,585 - INFO - accepted ('127.0.0.1', 57473) with fd 1076
+2023-11-07 18:47:45,596 - INFO - ('127.0.0.1', 57473) authenticated successfully
+2023-11-07 18:47:45,596 - INFO - welcome ('127.0.0.1', 57473)
+2023-11-07 18:47:56,236 - INFO - server started on [127.0.0.1]:18862
+2023-11-07 18:48:07,979 - INFO - server started on [127.0.0.1]:18863
+2023-11-07 18:48:28,151 - INFO - accepted ('127.0.0.1', 57531) with fd 884
+2023-11-07 18:48:28,153 - INFO - ('127.0.0.1', 57531) authenticated successfully
+2023-11-07 18:48:28,153 - INFO - welcome ('127.0.0.1', 57531)
+2023-11-07 18:48:28,461 - INFO - accepted ('127.0.0.1', 57538) with fd 1068
+2023-11-07 18:48:28,467 - INFO - ('127.0.0.1', 57538) authenticated successfully
+2023-11-07 18:48:28,467 - INFO - welcome ('127.0.0.1', 57538)
+2023-11-07 18:48:30,775 - INFO - [SENSORES] Valores publicados no tópico sensores: [8, 32, None, 2]
+2023-11-07 18:48:30,775 - INFO - goodbye ('127.0.0.1', 57531)
+2023-11-07 18:48:30,775 - INFO - goodbye ('127.0.0.1', 57538)
+2023-11-07 18:48:30,775 - INFO - accepted ('127.0.0.1', 57556) with fd 1080
+2023-11-07 18:48:30,775 - INFO - ('127.0.0.1', 57556) authenticated successfully
+2023-11-07 18:48:30,775 - INFO - welcome ('127.0.0.1', 57556)
+2023-11-07 18:48:31,218 - INFO: [Sensores] = [8, 32, None, 2]
+2023-11-07 18:48:31,221 - INFO: [Controlador] = {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:48:31,221 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:48:31,224 - INFO - accepted ('127.0.0.1', 57564) with fd 836
+2023-11-07 18:48:31,225 - INFO - ('127.0.0.1', 57564) authenticated successfully
+2023-11-07 18:48:31,225 - INFO - welcome ('127.0.0.1', 57564)
+2023-11-07 18:48:31,255 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": -20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:48:31,257 - INFO: [Atuadores] = {"angulo": -20, "sensor1": true, "sensor2": false}
+2023-11-07 18:48:39,785 - INFO - Sync process complete for all tables.
+2023-11-07 18:48:40,024 - INFO - Sync process complete for all tables.
+2023-11-07 18:49:27,962 - INFO - accepted ('127.0.0.1', 57617) with fd 696
+2023-11-07 18:49:27,964 - INFO - ('127.0.0.1', 57617) authenticated successfully
+2023-11-07 18:49:27,964 - INFO - welcome ('127.0.0.1', 57617)
+2023-11-07 18:49:28,160 - INFO - accepted ('127.0.0.1', 57623) with fd 604
+2023-11-07 18:49:28,160 - INFO - ('127.0.0.1', 57623) authenticated successfully
+2023-11-07 18:49:28,160 - INFO - welcome ('127.0.0.1', 57623)
+2023-11-07 18:49:30,777 - INFO - [SENSORES] Valores publicados no tópico sensores: [14, None, None, 29]
+2023-11-07 18:49:30,787 - INFO - accepted ('127.0.0.1', 57637) with fd 1040
+2023-11-07 18:49:30,787 - INFO - ('127.0.0.1', 57637) authenticated successfully
+2023-11-07 18:49:30,787 - INFO - welcome ('127.0.0.1', 57637)
+2023-11-07 18:49:31,634 - INFO: [Sensores] = [14, None, None, 29]
+2023-11-07 18:49:31,638 - INFO: [Controlador] = {"angulo": 20, "sensor1": true, "sensor2": false}
+, "sensor1": true, "sensor2": false}
+2023-11-07 18:49:31,641 - INFO - accepted ('127.0.0.1', 57655) with fd 684
+2023-11-07 18:49:31,642 - INFO - ('127.0.0.1', 57655) authenticated successfully
+2023-11-07 18:49:31,642 - INFO - welcome ('127.0.0.1', 57655)
+2023-11-07 18:49:31,677 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": 20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:49:31,680 - INFO: [Atuadores] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:49:41,094 - INFO - Sync process complete for all tables.
+2023-11-07 18:49:41,316 - INFO - Sync process complete for all tables.
+2023-11-07 18:50:27,955 - INFO - accepted ('127.0.0.1', 57709) with fd 1032
+2023-11-07 18:50:27,955 - INFO - ('127.0.0.1', 57709) authenticated successfully
+2023-11-07 18:50:27,955 - INFO - welcome ('127.0.0.1', 57709)
+2023-11-07 18:50:28,213 - INFO - accepted ('127.0.0.1', 57715) with fd 1172
+2023-11-07 18:50:28,219 - INFO - ('127.0.0.1', 57715) authenticated successfully
+2023-11-07 18:50:28,220 - INFO - welcome ('127.0.0.1', 57715)
+2023-11-07 18:50:30,778 - INFO - [SENSORES] Valores publicados no tópico sensores: [27, 15, 5, 26]
+2023-11-07 18:50:30,778 - INFO - goodbye ('127.0.0.1', 57556)
+2023-11-07 18:50:30,778 - INFO - goodbye ('127.0.0.1', 57564)
+2023-11-07 18:50:30,778 - INFO - goodbye ('127.0.0.1', 57617)
+2023-11-07 18:50:30,778 - INFO - goodbye ('127.0.0.1', 57623)
+2023-11-07 18:50:30,778 - INFO - goodbye ('127.0.0.1', 57637)
+2023-11-07 18:50:30,778 - INFO - goodbye ('127.0.0.1', 57715)
+2023-11-07 18:50:30,778 - INFO - goodbye ('127.0.0.1', 57655)
+2023-11-07 18:50:30,778 - INFO - goodbye ('127.0.0.1', 57709)
+2023-11-07 18:50:30,778 - INFO - accepted ('127.0.0.1', 57729) with fd 808
+2023-11-07 18:50:30,778 - INFO - ('127.0.0.1', 57729) authenticated successfully
+2023-11-07 18:50:30,778 - INFO - welcome ('127.0.0.1', 57729)
+2023-11-07 18:50:32,231 - INFO - Sync process complete for all tables.
+2023-11-07 18:50:32,232 - INFO: [Sensores] = [27, 15, 5, 26]
+2023-11-07 18:50:32,237 - INFO: [Controlador] = {"angulo": 20, "sensor1": true, "sensor2": false}
+, "sensor1": true, "sensor2": false}
+2023-11-07 18:50:32,241 - INFO - accepted ('127.0.0.1', 57742) with fd 1124
+2023-11-07 18:50:32,243 - INFO - ('127.0.0.1', 57742) authenticated successfully
+2023-11-07 18:50:32,243 - INFO - welcome ('127.0.0.1', 57742)
+2023-11-07 18:50:32,284 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": 20, "sensor1": true, "sensor2": false}'
+2023-11-07 18:50:32,288 - INFO: [Atuadores] = {"angulo": 20, "sensor1": true, "sensor2": false}
+2023-11-07 18:50:32,510 - INFO - Sync process complete for all tables.
+2023-11-07 18:51:27,968 - INFO - accepted ('127.0.0.1', 57792) with fd 1196
+2023-11-07 18:51:27,969 - INFO - ('127.0.0.1', 57792) authenticated successfully
+2023-11-07 18:51:27,970 - INFO - welcome ('127.0.0.1', 57792)
+2023-11-07 18:51:28,265 - INFO - accepted ('127.0.0.1', 57798) with fd 1232
+2023-11-07 18:51:28,268 - INFO - ('127.0.0.1', 57798) authenticated successfully
+2023-11-07 18:51:28,268 - INFO - welcome ('127.0.0.1', 57798)
+2023-11-07 18:51:30,778 - INFO - [SENSORES] Valores publicados no tópico sensores: [None, None, 4, 20]
+2023-11-07 18:51:30,778 - INFO - accepted ('127.0.0.1', 57802) with fd 1256
+2023-11-07 18:51:30,778 - INFO - ('127.0.0.1', 57802) authenticated successfully
+2023-11-07 18:51:30,778 - INFO - welcome ('127.0.0.1', 57802)
+2023-11-07 18:51:31,607 - INFO: [Sensores] = [None, None, 4, 20]
+2023-11-07 18:51:31,611 - INFO: [Controlador] = {"angulo": -20, "sensor1": false, "sensor2": true}
+, "sensor1": false, "sensor2": true}
+2023-11-07 18:51:31,616 - INFO - accepted ('127.0.0.1', 57819) with fd 1304
+2023-11-07 18:51:31,618 - INFO - ('127.0.0.1', 57819) authenticated successfully
+2023-11-07 18:51:31,618 - INFO - welcome ('127.0.0.1', 57819)
+2023-11-07 18:51:31,670 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": -20, "sensor1": false, "sensor2": true}'
+2023-11-07 18:51:31,673 - INFO: [Atuadores] = {"angulo": -20, "sensor1": false, "sensor2": true}
+2023-11-07 18:51:33,719 - INFO - Sync process complete for all tables.
+2023-11-07 18:51:34,327 - INFO - Sync process complete for all tables.
+2023-11-07 18:52:27,962 - INFO - accepted ('127.0.0.1', 57875) with fd 1336
+2023-11-07 18:52:27,965 - INFO - ('127.0.0.1', 57875) authenticated successfully
+2023-11-07 18:52:27,965 - INFO - welcome ('127.0.0.1', 57875)
+2023-11-07 18:52:28,323 - INFO - accepted ('127.0.0.1', 57881) with fd 1292
+2023-11-07 18:52:28,325 - INFO - ('127.0.0.1', 57881) authenticated successfully
+2023-11-07 18:52:28,326 - INFO - welcome ('127.0.0.1', 57881)
+2023-11-07 18:52:30,780 - INFO - [SENSORES] Valores publicados no tópico sensores: [None, 4, 32, None]
+2023-11-07 18:52:30,785 - INFO - accepted ('127.0.0.1', 57885) with fd 1136
+2023-11-07 18:52:30,787 - INFO - ('127.0.0.1', 57885) authenticated successfully
+2023-11-07 18:52:30,787 - INFO - welcome ('127.0.0.1', 57885)
+2023-11-07 18:52:30,825 - INFO - goodbye ('127.0.0.1', 57729)
+2023-11-07 18:52:30,825 - INFO - goodbye ('127.0.0.1', 57742)
+2023-11-07 18:52:30,826 - INFO - goodbye ('127.0.0.1', 57792)
+2023-11-07 18:52:30,826 - INFO - goodbye ('127.0.0.1', 57798)
+2023-11-07 18:52:30,827 - INFO - goodbye ('127.0.0.1', 57819)
+2023-11-07 18:52:30,827 - INFO - goodbye ('127.0.0.1', 57802)
+2023-11-07 18:52:30,827 - INFO - goodbye ('127.0.0.1', 57881)
+2023-11-07 18:52:30,828 - INFO - goodbye ('127.0.0.1', 57875)
+2023-11-07 18:52:32,597 - INFO: [Sensores] = [None, 4, 32, None]
+2023-11-07 18:52:32,600 - INFO - [Atuador] - Mensagem recebida no tópico controlador: {"angulo": 20, "sensor1": false, "sensor2": true}
+2023-11-07 18:52:32,601 - INFO: [Controlador] = {"angulo": 20, "sensor1": false, "sensor2": true}
+2023-11-07 18:52:32,604 - INFO - accepted ('127.0.0.1', 57897) with fd 1196
+2023-11-07 18:52:32,608 - INFO - ('127.0.0.1', 57897) authenticated successfully
+2023-11-07 18:52:32,608 - INFO - welcome ('127.0.0.1', 57897)
+2023-11-07 18:52:32,648 - INFO - [Atuadores] - Valores publicados no tópico atuadores: b'{"angulo": 20, "sensor1": false, "sensor2": true}'
+2023-11-07 18:52:32,655 - INFO: [Atuadores] = {"angulo": 20, "sensor1": false, "sensor2": true}
+2023-11-07 18:52:32,952 - INFO - Sync process complete for all tables.
+2023-11-07 18:52:33,240 - INFO - Sync process complete for all tables.
+2023-11-07 18:52:41,595 - WARNING - keyboard interrupt!
+2023-11-07 18:52:41,595 - INFO - server has terminated
+2023-11-07 18:52:41,595 - INFO - listener closed
+2023-11-07 18:52:44,380 - WARNING - keyboard interrupt!
+2023-11-07 18:52:44,381 - INFO - server has terminated
+2023-11-07 18:52:44,381 - INFO - listener closed
+2023-11-07 18:52:44,381 - INFO - goodbye ('127.0.0.1', 57897)
+2023-11-07 18:52:44,382 - INFO - goodbye ('127.0.0.1', 57885)
+2023-11-07 18:52:45,722 - WARNING - keyboard interrupt!
+2023-11-07 18:52:45,722 - INFO - server has terminated
+2023-11-07 18:52:45,723 - INFO - listener closed
+2023-11-07 18:52:45,723 - INFO - goodbye ('127.0.0.1', 56927)
+2023-11-07 18:52:45,723 - INFO - goodbye ('127.0.0.1', 56925)
+2023-11-07 18:52:45,724 - INFO - goodbye ('127.0.0.1', 56913)
+2023-11-07 18:52:45,724 - INFO - goodbye ('127.0.0.1', 57473)
+2023-11-07 18:52:45,725 - INFO - goodbye ('127.0.0.1', 57472)
+2023-11-07 18:52:45,725 - INFO - goodbye ('127.0.0.1', 56989)
