@@ -62,6 +62,7 @@ Para iniciar o banco de dados, siga os passos abaixo:
 3. No terminal do container do MySQL, execute os seguintes comandos para configurar e permitir a conexão:
 
     ```
+    rm -rf /var/lib/mysql/*
     mysqld --initialize-insecure
     mysql -u root
     ALTER USER 'root'@'localhost' IDENTIFIED BY 'asdasd';
