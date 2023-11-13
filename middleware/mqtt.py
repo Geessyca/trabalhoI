@@ -14,20 +14,22 @@ class MQTT:
             dados_tratados = [int(s) if s.isdigit() else -1 if s == 'None' else s for s in dados_tratados]
         return dados_tratados
     
-    def tratamentoAtuadores(self,dados):
+    def tratamentoAtuadores(self,dados_msg):
+        dados_json = json.loads(dados_msg)
+        dados=[dados_json["sensor1"],dados_json["sensor2"],dados_json["angulo"]]
         servo="Nenhum servo"
         sentido="Centro"
         if dados[0] and dados[2] == 20:
-            servo = "Vertical"
+            servo = "Atuador Vertical"
             sentido="Norte"
         elif dados[0] and dados[2] == -20:
-            servo = "Vertical"
+            servo = "Atuador Vertical"
             sentido="Sul"
         elif dados[1] and dados[2] == 20:
-            servo = "Horizontal"
+            servo = "Atuador Horizontal"
             sentido="Leste"
         elif dados[1] and dados[2] == -20:
-            servo = "Horizontal"
+            servo = "Atuador Horizontal"
             sentido="Oeste"    
         return(f"{servo} se encontra direcionado. Sentido atual: {sentido}") 
         
@@ -40,6 +42,7 @@ class MQTT:
             angulo=0
             valor_atual=0
             for i, valor in enumerate(dados_tratados):
+
                 if valor> conf["valorMin"] and valor > valor_atual:
                     valor_atual=valor
                     if (i == 0 and conf["sensorNorte"] == 1 and conf["atuaVert"] == 1):
@@ -58,10 +61,10 @@ class MQTT:
                         angulo = -20
                         sensor1 = 0
                         sensor2 = 1
-                    break
-            
+                    pass
+             
                      
-            
+             
             sensor = {
                 "Leste": float(dados_tratados[2]),
                 "Norte": float(dados_tratados[0]),

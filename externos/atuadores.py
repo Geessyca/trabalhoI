@@ -27,8 +27,8 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     logging.info(f"[Atuador] - Mensagem recebida no tópico {msg.topic}: {msg.payload.decode('utf-8')}")
-    service.tratamentoAtuadores(msg.payload.decode('utf-8'))
-    publica_valor(msg.payload)
+    mensagem=service.tratamentoAtuadores(msg.payload.decode('utf-8'))
+    publica_valor(mensagem)
 
 
 client = mqtt.Client()

@@ -9,15 +9,19 @@ from dotenv import load_dotenv
 logging.basicConfig(filename='D:/sd/trabalhoI/logs/log.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class TableSync:
-    def __init__(self):
+    def __init__(self, file_path):
+        self.file_path = file_path
         dotenv_path = os.path.join(os.path.dirname(__file__), '../bd.env') 
         load_dotenv(dotenv_path)
         self.host = os.getenv("HOST")
         self.user = os.getenv("USER")
         self.password = os.getenv("PASSWORD")
         self.database = os.getenv("DATABASE")
-        self.port1=os.getenv("PORT1")
-        self.port2=os.getenv("PORT2")
+        self.port1=os.getenv("PORT")
+        if self.port1 == os.getenv("PORT1"):
+            self.port2=os.getenv("PORT2")
+        else:            
+            self.port2=os.getenv("PORT1")
 
     def verificar_conexao(self, porta):
         try:
@@ -70,30 +74,17 @@ class TableSync:
             cursor2.execute(f"SELECT COUNT(*) FROM {table_name}")
             rows_count_2 = cursor2.fetchone()[0]
 
+
             if rows_count_1 != rows_count_2:
-                if rows_count_1 < rows_count_2:
-                    cursor1.execute(f"DELETE FROM {table_name}")
-                    cursor2.execute(f"SELECT * FROM {table_name}")
-                    data_to_insert = cursor2.fetchall()
-
-                    columns = ', '.join([column[0] for column in cursor2.description])
-                    placeholders = ', '.join(['%s'] * len(cursor2.description))
-                    insert_query = f"INSERT INTO {table_name} ({columns}) VALUES ({placeholders})"
-
-                    cursor1.executemany(insert_query, data_to_insert)
-                    db1.commit()
-                else:
+                if rows_count_1 > rows_count_2:
                     cursor2.execute(f"DELETE FROM {table_name}")
                     cursor1.execute(f"SELECT * FROM {table_name}")
                     data_to_insert = cursor1.fetchall()
-
                     columns = ', '.join([column[0] for column in cursor1.description])
                     placeholders = ', '.join(['%s'] * len(cursor1.description))
                     insert_query = f"INSERT INTO {table_name} ({columns}) VALUES ({placeholders})"
-
                     cursor2.executemany(insert_query, data_to_insert)
                     db2.commit()
-                
                 logging.info("Sync process complete for all tables.")
                 cursor1.close()
                 cursor2.close()
@@ -102,8 +93,25 @@ class TableSync:
 
     def sync(self):
         while True:
+            dotenv_path = os.path.join(os.path.dirname(self.file_path), '../bd.env') 
+            load_dotenv(dotenv_path)
+            self.port1 = os.getenv("PORT")
+            
+            if self.port1 == os.getenv("PORT1"):
+                self.port2 = os.getenv("PORT2")
+            else:
+                self.port2 = os.getenv("PORT1")
+            
+            print(self.port1)
+            print(self.port2)
             self.sincronizacao()
             time.sleep(30)
 
-thread_sincron = threading.Thread(target=TableSync().sync)
-thread_sincron.start()
+if __name__ == "__main__":
+    # Passe o caminho do arquivo ao instanciar a classe
+    script_path = os.path.abspath(__file__)
+    table_sync = TableSync(script_path)
+
+    # Crie uma thread usando o método sync
+    thread_sincron = threading.Thread(target=table_sync.sync)
+    thread_sincron.start()

@@ -29,6 +29,7 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, message):
     topic = message.topic
     payload = message.payload.decode("utf-8")
+    print(payload)
     if topic == mqtt_topic_sensores:
         message = service.save_sensor(payload)
         logging.info(f"[Sensores] = {payload}")

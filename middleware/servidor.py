@@ -113,7 +113,7 @@ class Middleware(rpyc.Service):
     
     def exposed_check_connection(self):
         return True
-
+ 
 def magic_word_authenticator(sock):
     dotenv_path = os.path.join(os.path.dirname(__file__), '../auth.env') 
     load_dotenv(dotenv_path)
