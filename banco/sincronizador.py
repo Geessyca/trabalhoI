@@ -102,8 +102,6 @@ class TableSync:
             else:
                 self.port2 = os.getenv("PORT1")
             
-            print(self.port1)
-            print(self.port2)
             self.sincronizacao()
             time.sleep(30)
 
